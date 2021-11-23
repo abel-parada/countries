@@ -1,38 +1,87 @@
 .App {
   text-align: center;
+  background-image: URL("./Images/bg.png");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0rem 2rem;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.countries {
+  width: 20%;
+  background-color: white;
+  box-shadow: 0 0 5px grey;
+  border: solid black;
+  border-width: 1px;
+  margin: 15px 15px;
+  padding: 12px;
+  text-transform: capitalize;
+  border-radius: 12px;
+  position: relative;
+}
+
+img {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  border: solid black 1px;
+}
+
+.cardhead {
+  background-color: lightgrey;
+  margin: -0.75rem;
+  margin-top: -0.75rem;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  border-top-left-radius: 12px;
+}
+
+input {
+  margin: 50px;
+  padding: 12px;
+  border-radius: 8px;
+  border: solid 1px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
+@keyframes spin {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
+}
+
+.loading {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
