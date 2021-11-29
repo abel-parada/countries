@@ -3,15 +3,28 @@
   background-image: URL("./Images/bg.png");
 }
 
-.wrapper {
+.Home {
+  height: 100vh;
+  width: 100;
   display: flex;
   flex-wrap: wrap;
-  padding: 0rem 2rem;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.wrapper {
+  /* display: inline-grid;
+  grid-column-gap: 50px; */
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .countries {
-  width: 20%;
   background-color: white;
   box-shadow: 0 0 5px grey;
   border: solid black;
@@ -34,7 +47,7 @@ img {
 }
 
 .cardhead {
-  background-color: lightgrey;
+  background-color: rgb(181, 215, 247);
   margin: -0.75rem;
   margin-top: -0.75rem;
   margin-bottom: 1rem;
