@@ -1,13 +1,36 @@
 .App {
   text-align: center;
   background-image: URL("./Images/bg.png");
+  height: 100vh;
 }
 
-.Home {
-  height: 100vh;
-  width: 100;
+nav {
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+footer {
+  border-top: 1px solid black;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px;
+  align-items: center;
+  font-size: larger;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.Home,
+.About {
+  height: 75vh;
+  width: 100vw;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   align-content: center;
   justify-content: center;

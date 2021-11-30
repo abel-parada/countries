@@ -40,9 +40,13 @@ class CountriesList extends Component {
               <h1>THE WORLD IS YOUR OYSTER!</h1>
               <input type="text" name="search" placeholder="Search for a country here" onChange={this.searchHandler}></input>
               <div className="wrapper">
-                {this.state.data.filter((country)=>{
-                  return country.name.toLowerCase().includes(this.state.searchInput.toLowerCase());
-                }).map((country) =>(
+                {this.state.data
+                  .filter((country)=>{
+                    return country.name
+                      .toLowerCase()
+                      .includes(this.state.searchInput.toLowerCase());
+                })
+                .map((country) =>(
                   <CountryCard {...country} key={country.name}/>
                 ))}
               </div>
