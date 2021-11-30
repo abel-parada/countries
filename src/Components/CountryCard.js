@@ -18,7 +18,7 @@ const CountryCard = ({name, capital,languages,currencies,population,flags}) => {
                         <h2>{name}</h2>
                         <h3>{capital}</h3>
                         </div>
-                        <img src={flags.png} alt={name}/>
+                        <img className="flags" src={flags.png} alt={name}/>
         
                         <p>
                         <strong><FaLanguage /> Languages</strong>: {languages.map((languages,j) => (

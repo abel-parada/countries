@@ -59,7 +59,7 @@ a {
   position: relative;
 }
 
-img {
+.flags {
   height: 34px;
   width: 34px;
   border-radius: 50%;
@@ -74,8 +74,9 @@ img {
   margin: -0.75rem;
   margin-top: -0.75rem;
   margin-bottom: 1rem;
-  padding: 1rem 0;
+  padding: 1rem 1rem;
   border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 input {
@@ -120,4 +121,14 @@ input {
   align-items: center;
   justify-content: center;
   align-content: center;
+}
+
+.article {
+  background-color: white;
+  width: 500px;
+  height: 75vh;
+  padding: 4rem;
+  margin: 0 auto;
+  border-left: solid 1px black;
+  border-right: solid 1px black;
 }
